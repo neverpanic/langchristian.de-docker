@@ -1,2 +1,2 @@
-FROM alpine:3.9
-RUN apk add --no-cache bash python3 imagemagick make py3-tox py3-virtualenv py3-six
+FROM ubuntu:18.04
+RUN apt-get update && apt-get -y install bash python3 imagemagick make tox && rm -rf /var/cache/apt
